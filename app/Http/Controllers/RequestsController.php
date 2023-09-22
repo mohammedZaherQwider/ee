@@ -129,6 +129,8 @@ class RequestsController extends Controller
             $req->save();
         } else if ($request->type == 'manager') {
             $req->general_manager_acceptance = 1;
+            $req->statas =1;
+            $$req->user->section_id= $req->transfer_deparment_id;
             $req->save();
         }
         return redirect()->back()->with('msg','تم قبول الطلب ');

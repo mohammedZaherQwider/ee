@@ -97,7 +97,7 @@
                                     <td>{{ ($request->current_manager_acceptance >0) ? 'تم قبول الطلب' : 'قيد الانتظار'}}</td>
                                     <td>{{  ($request->general_manager_acceptance  >0) ? 'تم قبول الطلب' : 'قيد الانتظار'}}</td>
                                     <td>{{  ($request->transfer_manager_acceptance  >0) ? 'تم قبول الطلب' : 'قيد الانتظار'}}</td>
-                                    <td>{{  ($request->statas  ==0) ? 'قيد الانتظار' : "$request->statas"}}</td>
+                                    <td>{{  ($request->statas  ==0) ? 'قيد الانتظار' : 'تم قبول الطلب '}}</td>
 
                                 </tr>
                             @endforeach
